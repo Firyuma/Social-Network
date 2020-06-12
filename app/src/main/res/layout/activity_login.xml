@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Authen.LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:id="@+id/imv_logo"
+        android:src="@drawable/logo_social_network"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_below="@id/imv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập tài khoản"
+        android:maxLines="1"
+        android:textColor="@color/color_button_login_phone"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_username"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Tài khoản"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_password"
+        android:layout_below="@+id/edt_username"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true"
+        android:imeActionLabel="Sign in"
+        android:imeOptions="actionDone"
+        />
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/edt_password"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/custom_button_login"
+        android:elevation="2dp"
+        android:stateListAnimator="@null"
+        android:text="Đăng Nhập"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/layout_register"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_below="@id/btn_sign_in"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/shape_button_register">
+
+        <View
+            android:id="@+id/login_confirm_account_divider"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:background="@color/green_00ce93" />
+
+        <TextView
+            android:id="@+id/login_confirm_account_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:text="@string/str_confirm_account"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/login_register_now_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_confirm_account_textview"
+            android:layout_alignStart="@id/login_confirm_account_textview"
+            android:paddingBottom="@dimen/_6sdp"
+            android:text="@string/str_register_now"
+            android:textColor="@color/black_0e0e0e"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:src="@drawable/ic_arrow_right_circle" />
+    </RelativeLayout>
+
+</RelativeLayout>

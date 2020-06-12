@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#2F468A</color>
+    <color name="colorAccent">#4267B2</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparent">#BFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent95">#E6FFFFFF</color>
+
+    <color name="colorAmber500">#FFC107</color>
+    <color name="colorAmber300">#FFD54F</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorGreen">#69C242</color>
+
+    <color name="colorBlue">#4267B2</color>
+    <color name="colorBlue50">#E8F0FE</color>
+    <color name="colorLightBlue">#459FFC</color>
+    <color name="colorMiddleBlue">#395996</color>
+
+    <color name="colorRed">#ED001A</color>
+    <color name="colorRed400">#EF5350</color>
+
+    <color name="colorGray100">#EBEDF0</color>
+    <color name="colorGray200">#F2F3F5</color>
+    <color name="colorGray300">#E0E0E0</color>
+    <color name="colorGray400">#BDBDBD</color>
+    <color name="colorGray500">#8D949E</color>
+    <color name="colorGray600">#757575</color>
+    <color name="colorGray700">#616161</color>
+    <color name="colorGray800">#424242</color>
+    <color name="colorGray900">#212121</color>
+
+    <color name="color_button_login">#33c697</color>
+    <color name="color_button_login_pressed">#2cbe8f</color>
+    <color name="color_button_login_google">#df4a32</color>
+    <color name="color_button_login_google_pressed">#D32F2F</color>
+    <color name="color_button_login_phone">#F36D21</color>
+    <color name="color_button_login_phone_pressed">#E65100</color>
+
+
+    <color name="black_0e0e0e">#0e0e0e</color>
+    <color name="black_000000">#000000</color>
+    <color name="white_fefefe">#fefefe</color>
+    <color name="white_f8f9fb">#f8f9fb</color>
+    <color name="gray_c6c7c9">#c6c7c9</color>
+    <color name="gray_06">#E6E6E6</color>
+    <color name="black_151515">#151515</color>
+    <color name="gray_f0f0f0">#f0f0f0</color>
+    <color name="gray_b2b2b2">#b2b2b2</color>
+    <color name="gray_dfe1e6">#dfe1e6</color>
+    <color name="green_00ce93">#00ce93</color>
+    <color name="pink_d92d8a">#d92d8a</color>
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Profile.ProfileActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_cover_photo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:fitsSystemWindows="true">
+
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray100" />
+
+            <com.jetradarmobile.snowfall.SnowfallView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:snowflakeAlphaMax="255"
+                app:snowflakeAlphaMin="150"
+                app:snowflakeAngleMax="5"
+                app:snowflakeImage="@drawable/snowflake"
+                app:snowflakeSizeMax="16dp"
+                app:snowflakeSizeMin="4dp"
+                app:snowflakeSpeedMax="6"
+                app:snowflakeSpeedMin="2"
+                app:snowflakesAlreadyFalling="false"
+                app:snowflakesFadingEnabled="true"
+                app:snowflakesNum="100" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="5dp"
+            android:src="@color/colorGray100"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="5dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_avatar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="5dp"
+            android:src="@color/colorGray100"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="5dp" />
+
+        <View
+            android:id="@+id/view_center_avatar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/rl_cover_photo"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/layout_change_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/view_center_avatar"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@id/view_center_avatar"
+            android:background="@drawable/custom_background_circle"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_take_photo"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_avatar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray200">
+
+                <ProgressBar
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:indeterminateDrawable="@drawable/custom_progress_bar" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Người dùng HubBook"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <include
+                    layout="@layout/layout_profile_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/colorGray200" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ViewFlipper>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
